@@ -1,0 +1,74 @@
+.command-section {
+  background-color: #f5f4fa;
+}
+
+.coomand-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.command-item {
+  flex-basis: calc(100% - 120px) / 4;
+  margin-left: 30px;
+}
+
+.command-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
+}
+
+.name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.profession {
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--paragraph-text-color);
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: color var(--timing) var(--transition-function),
+    background-color var(--timing) var(--transition-function);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}

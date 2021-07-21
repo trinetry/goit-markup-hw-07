@@ -1,0 +1,99 @@
+.footer {
+  background-color: var(--font-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  font-style: 400;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--primary-white-color);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.adress {
+  line-height: 2;
+  color: var(--primary-white-color);
+  text-decoration: none;
+  transition: color var(--timing) var(--transition-function);
+}
+
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.adress:hover,
+.adress:focus {
+  color: var(--accent-color);
+}
+.adress {
+  margin-bottom: 9px;
+}
+
+.contact-footer {
+  margin-top: 10px;
+  font-family: Roboto;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--timing) var(--transition-function);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
+.invitation {
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.social-footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--timing) var(--transition-function);
+}
+
+.social-footer-link:hover,
+.social-footer-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-footer-list {
+  display: flex;
+}
+
+.social-footer {
+  margin-left: 70px;
+}
+
+.social-footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
