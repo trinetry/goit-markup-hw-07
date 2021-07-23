@@ -29,6 +29,11 @@ img {
 
 .button {
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color var(--timing) var(--transition-function),
+  color var(--timing) var(--transition-function);
+  border-color: transparent;
 }
 
 body {

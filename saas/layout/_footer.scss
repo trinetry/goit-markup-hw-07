@@ -1,7 +1,7 @@
 .footer {
-  background-color: var(--font-color);
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 60px;  
+  background-color: var(--font-color);
 }
 
 .footer-container {
@@ -10,34 +10,25 @@
 }
 
 .logo-footer {
-  font-family: Raleway;
-  font-style: 400;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
   color: var(--primary-white-color);
   display: block;
   margin-bottom: 20px;
 }
 
-.adress {
-  line-height: 2;
-  color: var(--primary-white-color);
+.adress {  
+  margin-bottom: 9px;
+  line-height: 2;  
   text-decoration: none;
+  color: var(--primary-white-color);
   transition: color var(--timing) var(--transition-function);
+
+  &:focus,
+  &:hover {
+  color: var(--accent-color);
+}
 }
 
 .adress-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.adress:hover,
-.adress:focus {
-  color: var(--accent-color);
-}
-.adress {
   margin-bottom: 9px;
 }
 
@@ -45,47 +36,35 @@
   margin-top: 10px;
   font-family: Roboto;
   line-height: 1.71;
+  text-decoration: none;  
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
   transition: color var(--timing) var(--transition-function);
-}
 
-.contact-footer:hover,
-.contact-footer:focus {
+  &:hover,
+  &:focus {
   color: var(--accent-color);
+
+  }
 }
 
-.invitation {
-  color: var(--primary-white-color);
-  text-transform: uppercase;
-  font-weight: 700;
+.invitation {  
   margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font (700, 20px, 1.14);
+  text-transform: uppercase;  
+  color: var(--primary-white-color);
 }
 
 .social-footer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--timing) var(--transition-function);
-}
 
-.social-footer-link:hover,
-.social-footer-link:focus {
+  &:hover,
+  &:focus {
   background-color: var(--accent-color);
+  }
 }
 
 .social-footer-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-footer-list {
-  display: flex;
+  margin-right: 10px;  
 }
 
 .social-footer {
@@ -96,4 +75,8 @@
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
+}
+
+.social-footer-list {
+  display: flex;
 }

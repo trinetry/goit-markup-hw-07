@@ -1,8 +1,8 @@
 .advantages-list {
   display: flex;
-  flex-direction: wrap;
-  margin-left: -30px;
+  flex-direction: wrap;  
   align-items: center;
+  margin-left: -30px;
 }
 
 .advantages-item {
@@ -11,17 +11,13 @@
 }
 
 .advantages {
+  @include font (700, 14px, 1.14);
   margin-bottom: 10px;
   font-style: 400;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .advantages-details {
-  font-size: 14px;
-  line-height: 2;
   color: var(--paragraph-text-color);
   text-transform: none;
 }
@@ -29,10 +25,10 @@
 .icon-wraper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  margin-bottom: 30px;
+  border-radius: 4px;  
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   background-color: #f5f4fa;
-  border-radius: 4px;
 }

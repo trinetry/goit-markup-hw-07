@@ -1,9 +1,9 @@
 .modal-title {
-  margin-bottom: 12px;
+  margin-bottom: 12px;  
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   color: var(--primary-text-color);
 }
 
@@ -26,16 +26,15 @@
   margin-top: 4px;
   padding-left: 42px;
   cursor: pointer;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color var(--timing) var(--transition-function);
-}
 
-.modal-input:focus {
+  &:focus {
   outline: none;
   border-color: var(--accent-color);
+  }
 }
-
 .modal-input:focus + .user-icon {
   fill: var(--accent-color);
 }
@@ -65,23 +64,24 @@
   width: 100%;
   height: 120px;
   padding: 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color var(--timing) var(--transition-function);
-}
 
-.modal-message:focus {
+  &:focus {
   outline: none;
   border-color: var(--accent-color);
-}
+  }
 
-.modal-message::placeholder {
+  &::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  }
 }
+
 .modal-form-checkbox {
   position: absolute;
   width: 1px;
@@ -91,15 +91,15 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
 
-.modal-form-checkbox:checked + .checkbox-icon {
+  &:checked + .checkbox-icon {  
+  background-size: contain;
+  background-origin: border-box;
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
   transition: background-color var(--transition-function) var(--timing);
+  }
 }
 
 .checkbox-icon {
@@ -117,8 +117,8 @@
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
-  font-weight: normal;
   margin-bottom: 30px;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -130,23 +130,21 @@
 }
 
 .modal-accept-button {
+  @include font(700, 16px, 1.87);
   width: 200px;
   height: 50px;
   margin: 0 auto;
   padding: 10px 55px;
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   transition: background-color var(--timing) var(--transition-function);
-}
 
-.modal-accept-button:focus,
-.modal-accept-button:hover {
+  &:focus,
+  &:hover {
   background-color: var(--hero-button-color);
+  }
 }

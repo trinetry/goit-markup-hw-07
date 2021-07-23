@@ -2,6 +2,7 @@
 
 @import "./utilits/variables";
 @import "./utilits/visually-hidden";
+@import "./utilits/mixin";
 
 // Base
 @import "./base/common";
@@ -14,6 +15,8 @@
 @import "./components/modal-window";
 @import "./components/modal-form";
 @import "./components/forms";
+@import "./components/logo";
+@import "./components/social-link";
 
 //Layout
 

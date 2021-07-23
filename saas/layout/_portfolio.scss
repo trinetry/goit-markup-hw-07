@@ -5,14 +5,6 @@
   margin-bottom: 50px;
 }
 
-.project-button {
-  border-color: transparent;
-  border-radius: 4px;
-  padding: 6px 22px;
-  transition: background-color var(--timing) var(--transition-function),
-    color var(--timing) var(--transition-function);
-}
-
 .project-button:hover,
 .project-button:focus {
   background-color: var(--accent-color);
@@ -34,34 +26,31 @@
   flex-basis: calc((100% - 3 * --card-set-gap) / 3);
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
-}
 
-.our-projects-item:hover,
-.our-projects-item:focus {
+  &:hover,
+  &:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  }
 }
 
 .project-button {
+  @include font(500, 16px, 1.6);
+  padding: 6px 22px;
   font-family: inherit;
   font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
   letter-spacing: inherit;
-}
+ }
 
 .project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font (700, 18px, 2);
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
 
 .project-type {
-  font-size: 16px;
-  line-height: 1.8;
+  @include font (400, 16px, 1.8);
   color: var(--paragraph-text-color);
 }
 
@@ -77,19 +66,18 @@
 }
 
 .thumb-text {
-  position: absolute;
+  position: absolute;  
+  padding: 63px 24px;  
+  transform: translateY(100%);  
+  overflow: auto;  
   top: 0;
   left: 0;
+  @include font (400, 18px, 1.5);
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
-  line-height: 1.5;
   color: var(--primary-white-color);
-  font-size: 18px;
   letter-spacing: 0.03em;
-  transform: translateY(100%);
   background-color: rgba(33, 150, 243, 0.9);
-  overflow: auto;
   transition: transform var(--timing) var(--transition-function);
 }
 

@@ -1,7 +1,5 @@
 .title {
+  @include font(700, 36px, 1.16);
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
 }

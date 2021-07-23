@@ -3,45 +3,37 @@
 }
 
 .hero-section {
-  flex-grow: 1;
-  background-color: var(--font-color);
+  flex-grow: 1;  
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/background/bcg.jpg');
-  background-size: cover;
-  background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  color: var(--primary-white-color);
+  color: var(--primary-white-color);  
+  background-color: var(--font-color);
 }
 
-.theme {
+.hero-theme {  
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(900, 44px, 1.36);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.hero-button {
-  cursor: pointer;
-  border-radius: 4px;
-  border-color: transparent;
-  width: 200px;
+.hero-button {  
   padding: 10px 32px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
+  @include font(700, 16px, 1.8);
+  width: 200px;
   color: inherit;
   background-color: var(--accent-color);
-  transition: background-color var(--timing) var(--transition-function);
-}
 
-.hero-button:hover,
-.hero-button:focus {
+  &:hover,
+  &:focus {
   background-color: var(--hero-button-color);
+}
 }

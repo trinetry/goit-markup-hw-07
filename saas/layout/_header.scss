@@ -1,10 +1,10 @@
 .header {
   border-bottom: 1px solid #eeeeee;
-}
-
-.header-container {
+  
+  &-container {
   display: flex;
   align-items: center;
+}
 }
 
 .navigation {
@@ -12,100 +12,88 @@
   align-items: center;
 }
 
-.nav-list {
+.menu {
   display: flex;
   align-items: center;
 }
 
 .contact-list {
-  margin-left: auto;
   display: flex;
+  margin-left: auto;
   align-items: center;
 }
 
-.nav-item:not(:last-child) {
+.menu_item:not(:last-child) {
   margin-right: 50px;
 }
 
-.web {
+.logo_inclusion {
   color: var(--accent-color);
 }
 
-.logo {
-  margin-right: 90px;
-  font-family: Raleway;
-  font-style: 400;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  color: var(--primary-text-color);
+.header_logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: color var(--timing) var(--transition-function);
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-}
-
-.nav-elements {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  cursor: pointer;
+  margin-right: 90px;
   color: var(--primary-text-color);
-  text-decoration: none;
-  padding-bottom: 32px;
-  padding-top: 32px;
   transition: color var(--timing) var(--transition-function);
-}
 
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-elements:hover,
-.nav-elements:focus {
+  &:hover,
+  &:focus {
   color: var(--accent-color);
 }
-
-.contact-icon {
-  fill: currentColor;
-  margin-right: 10px;
 }
 
-.contact-item:not(:last-child) {
+.menu_link {  
+  padding-bottom: 32px;
+  padding-top: 32px;  
+  cursor: pointer;
+  @include font(500, 14px, 1.14);
+  letter-spacing: 0.02em;
+  text-decoration: none;  
+  color: var(--primary-text-color);
+  transition: color var(--timing) var(--transition-function);
+
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+
+.contact_icon {
+  margin-right: 10px;  
+  fill: currentColor;
+}
+
+.contact_item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-header {
-  display: flex;
+.header_mail-link, .header_tel-link {  
+  display: flex;  
   align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  color: var(--paragraph-text-color);
-  text-decoration: none;
   padding-bottom: 32px;
   padding-top: 32px;
+  @include font(500, 14px, 1.14);
+  text-decoration: none;  
+  color: var(--paragraph-text-color);
   transition: color var(--timing) var(--transition-function),
-    fill var(--timing) var(--transition-function);
+  fill var(--timing) var(--transition-function);
 }
 
-.contact-header:hover,
-.contact-header:focus {
+.header_mail-link:hover,
+.header_mail-link:focus,
+.header_tel-link:focus,
+.header_tel-link:hover {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
 
-.nav-elements .current {
-  color: var(--accent-color);
+.menu_link.current {  
   position: relative;
-}
+  color: var(--accent-color);
 
-.nav-elements .current::after {
+  &::after {
   content: '';
   position: absolute;
   display: block;
@@ -113,6 +101,7 @@
   bottom: 0;
   width: 100%;
   height: 4px;
+  border-radius: 2px;  
   background-color: var(--accent-color);
-  border-radius: 2px;
+  }
 }

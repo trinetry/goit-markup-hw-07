@@ -16,19 +16,19 @@
 
 .close-button {
   position: absolute;
+  padding: 0;  
   top: 7px;
   right: 8px;
   width: 30px;
-  height: 30px;
+  height: 30px;  
+  cursor: pointer;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
-  cursor: pointer;
-  padding: 0;
   transition: fill var(--timing) var(--transition-function);
-}
 
-.close-button:focus,
-.close-button:hover {
+  &:focus,
+  &:hover {
   fill: var(--accent-color);
+  }
 }
