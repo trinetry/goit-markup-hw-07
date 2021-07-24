@@ -34,9 +34,10 @@
   outline: none;
   border-color: var(--accent-color);
   }
-}
-.modal-input:focus + .user-icon {
+
+  &:focus + .user-icon {
   fill: var(--accent-color);
+  }
 }
 
 .modal-wrapper {

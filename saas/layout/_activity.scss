@@ -25,7 +25,8 @@
   @include font (700, 14px, 1.14);
   display: flex;
   position: absolute;
-  justify-content: center;  
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;  
   bottom: 0;
   width: 100%;

@@ -4,7 +4,7 @@
   &-container {
   display: flex;
   align-items: center;
-}
+  }
 }
 
 .navigation {
@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.menu_item:not(:last-child) {
+.menu-item:not(:last-child) {
   margin-right: 50px;
 }
 

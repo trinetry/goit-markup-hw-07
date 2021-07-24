@@ -7,3 +7,10 @@
   border-radius: 50%;
   transition: background-color var(--timing) var(--transition-function), color var(--timing) var(--transition-function);
 }
+
+.social-item {
+  
+  &:not(:last-child) {
+  margin-right: 10px;  
+}
+}
