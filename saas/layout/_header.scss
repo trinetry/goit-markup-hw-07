@@ -1,9 +1,9 @@
 .header {
   border-bottom: 1px solid #eeeeee;
-  
+
   &-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -15,16 +15,20 @@
 .menu {
   display: flex;
   align-items: center;
+
+  & .menu_item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contact-list {
   display: flex;
   margin-left: auto;
   align-items: center;
-}
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
+  & .contact_item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .logo_inclusion {
@@ -40,68 +44,62 @@
 
   &:hover,
   &:focus {
-  color: var(--accent-color);
-}
+    color: var(--accent-color);
+  }
 }
 
-.menu_link {  
+.menu_link {
   padding-bottom: 32px;
-  padding-top: 32px;  
+  padding-top: 32px;
   cursor: pointer;
   @include font(500, 14px, 1.14);
   letter-spacing: 0.02em;
-  text-decoration: none;  
+  text-decoration: none;
   color: var(--primary-text-color);
   transition: color var(--timing) var(--transition-function);
 
   &:hover,
   &:focus {
-  color: var(--accent-color);
-}
+    color: var(--accent-color);
+  }
 }
 
 .contact_icon {
-  margin-right: 10px;  
+  margin-right: 10px;
   fill: currentColor;
 }
 
-.contact_item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header_mail-link, .header_tel-link {  
-  display: flex;  
+.header_contact-link {
+  display: flex;
   align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
   @include font(500, 14px, 1.14);
-  text-decoration: none;  
+  text-decoration: none;
   color: var(--paragraph-text-color);
   transition: color var(--timing) var(--transition-function),
-  fill var(--timing) var(--transition-function);
+    fill var(--timing) var(--transition-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
-.header_mail-link:hover,
-.header_mail-link:focus,
-.header_tel-link:focus,
-.header_tel-link:hover {
-  fill: var(--accent-color);
-  color: var(--accent-color);
-}
-
-.menu_link.current {  
+.menu_link.current {
   position: relative;
   color: var(--accent-color);
 
   &::after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;  
-  background-color: var(--accent-color);
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
   }
 }
